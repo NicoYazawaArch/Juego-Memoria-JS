@@ -28,7 +28,7 @@ Un clásico juego de memoria (tipo "Memorama" o "Concentrese") desarrollado con 
 
 1.  Clona este repositorio:
     ```bash
-    git clone (https://github.com/NicoYazawaArch/Juego-Memoria-JSgit)
+    git clone (https://github.com/NicoYazawaArch/Juego-Memoria-JS.git)
     ```
 2.  Navega a la carpeta del proyecto.
 3.  Abre el archivo `index.html` en tu navegador web favorito.
