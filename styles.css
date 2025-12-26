@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(135deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+main {
+    width: auto; /* Dejamos que el contenido mande */
+    display: flex;
+    gap: 20px; /* Espacio entre el tablero y las estadísticas */
+    background-color: rgba(255, 255, 255, 0.1); /* Efecto cristal */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas perfectas */
+    gap: 10px;
+    background: transparent; /* Quitamos el fondo sólido */
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    font-size: 30px; /* Un poco más pequeño para que no sature */
+    color: #090979;
+    background: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Suaviza los cambios */
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Se agranda un poquito */
+    background: #e0e0e0;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(4px); /* Efecto de hundirse al clickear */
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 200px;
+    padding: 0;
+}
+
+.estadisticas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el texto */
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.estadisticas p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}

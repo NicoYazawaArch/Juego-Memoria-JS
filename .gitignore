@@ -1,0 +1,25 @@
+# --- Dependencias (Lo más importante) ---
+node_modules/
+package-lock.json
+yarn.lock
+
+# --- Archivos de Sistema Operativo ---
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Logs y Archivos de error ---
+*.log
+npm-debug.log*
+
+# --- Configuraciones del Editor (VS Code) ---
+.vscode/
+*.code-workspace
+
+# --- Variables de Entorno (Seguridad) ---
+.env
+.env.local
+
+# --- Carpetas de Build (Si usaras React/Vite en el futuro) ---
+dist/
+build/
